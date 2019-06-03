@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.HealthUpdate">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="25dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_age"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_height"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_edittext"
+                android:ems="10"
+                android:hint="height"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_weight"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="weight"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_suger"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="sugerlevel"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_pressure"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="pressure level"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_bmi"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="BMI"
+                android:inputType="textPersonName"
+                android:textColor="@color/red" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/txt_bmr"
+                android:layout_width="match_parent"
+                android:background="@drawable/custom_edittext"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="BMR"
+                android:inputType="textPersonName"
+                android:textColor="@color/red" />/>
+
+            <Button
+                android:id="@+id/btn_update_helth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="5dp"
+
+                android:text="     Update Details     " />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

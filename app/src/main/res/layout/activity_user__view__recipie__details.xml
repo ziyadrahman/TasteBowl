@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".User.User_View_Recipie_Details">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/user_view_recipie_add_comments"
+                        android:layout_width="90dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/addcomment" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/user_view_recipie_view_comments"
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/viewcomments" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/user_view_recipie_img"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="150dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/user_view_recipie_rating"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginRight="3dp"
+                            android:text="5"
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/user_view_recipie_like_or_save"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/likeicon" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/user_view_recipie_rname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="asd"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:fontFamily="serif-monospace"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_person_black_24dp" />
+                        <TextView
+                            android:id="@+id/user_view_recipie_uname"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="Recipie Name"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/ic_contact_phone_black_24dp" />
+                    <TextView
+                        android:id="@+id/user_view_recipie_uphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="asd"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/blue"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Ingredients"/>
+                <EditText
+                    android:id="@+id/user_view_recipie_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:focusableInTouchMode="false"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:gravity="top|left"
+                    android:background="@drawable/custom_edittext"
+                    android:hint=" Ingredients..."
+                    android:textStyle="italic"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"/>/>
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Description"/>
+                <EditText
+                    android:id="@+id/user_view_recipie_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:focusableInTouchMode="false"
+                    android:gravity="top|left"
+                    android:background="@drawable/custom_edittext"
+                    android:hint=" Description..."
+                    android:inputType="textMultiLine"
+                    android:minLines="5"
+                    android:scrollHorizontally="false"/>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

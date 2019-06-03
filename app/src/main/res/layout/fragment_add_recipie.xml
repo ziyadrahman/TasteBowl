@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.AddRecipie">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/add_recipie_nmae"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="5dp"
+                android:inputType="textPersonName"
+                android:hint="Name" />
+
+            <EditText
+                android:id="@+id/add_recipie_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top|left"
+                android:background="@drawable/custom_edittext"
+                android:hint=" Ingredients..."
+                android:inputType="textMultiLine"
+                android:minLines="4"/>
+
+            <Spinner
+                android:id="@+id/add_recipie_type"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/custom_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"></Spinner>
+            <EditText
+                android:id="@+id/add_recipie_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:gravity="top|left"
+                android:background="@drawable/custom_edittext"
+                android:hint=" Description..."
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:scrollHorizontally="false" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/add_recipie_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@android:drawable/picture_frame" />
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/add_recipie_imgCam"
+                        android:layout_width="46dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/cam1" />
+
+                    <ImageView
+                        android:id="@+id/add_recipie_imgGal"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="40dp"
+                        android:background="@drawable/gallery" />
+
+                </TableRow>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/add_recipie_btnadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="40dp"
+                android:text="     Add Recipie     " />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

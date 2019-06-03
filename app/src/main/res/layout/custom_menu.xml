@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/cus_menu_health_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/helthtips"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/user_view_recipie_uname"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/w1"
+                    android:layout_height="match_parent"
+                    android:text="Health Tips"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cus_menu_addShop"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/addshopicon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/w1"
+                    android:layout_height="match_parent"
+                    android:text="Add shop"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cus_menu_viewshops"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/nearshopicon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/w1"
+                    android:layout_height="match_parent"
+                    android:text="Near Shops"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/cus_menu_helth_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/healthupdateicon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/w1"
+                    android:layout_height="match_parent"
+                    android:text="Health Update"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/cus_menu_helth_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/feedackicon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:gravity="center_vertical"
+                    android:fontFamily="serif-monospace"
+                    android:textColor="@color/w1"
+                    android:layout_height="match_parent"
+                    android:text="Feedback"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

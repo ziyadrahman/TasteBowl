@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    android:layout_height="match_parent"
+    tools:context=".User.UserAddShop">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:paddingTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="8dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/blue"
+        android:text="Add Shop"/>
+
+    <EditText
+        android:hint="Name"
+        android:id="@+id/user_add_shop_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Owner Name"
+        android:id="@+id/user_add_shop_owner_nmae"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Palce"
+        android:id="@+id/user_add_shop_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Details"
+        android:id="@+id/user_add_shop_details"
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:gravity="top|left"
+        android:background="@drawable/custom_edittext"
+        android:inputType="textMultiLine"
+        android:minLines="5"
+        android:scrollHorizontally="false"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/user_add_shop_add"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="     Add     "
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+</LinearLayout>
