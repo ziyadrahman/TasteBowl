@@ -1,0 +1,117 @@
+
+public class orderDetailsActivity extends AppCompatActivity {
+
+    FirebaseDatabase database=FirebaseDatabase.getInstance();
+    DatabaseReference databaseOrders;
+
+    TextView orderNoView;
+    TextView orderDateView;
+    TextView deliveryDateView;
+    TextView customerNameView;
+    TextView itemsCountView;
+    TextView designerNameView;
+
+    RelativeLayout workCompleteLayout;
+
+    ImageView handWorkOnImageView;
+    ImageView handWorkOffImageView;
+
+    MaterialButton workCompleteButton;
+
+    ListView itemsListView;
+    long itemsCount;
+    String orderNo,customerName,orderDate,deliveryDate,userId,designerId,designerName;
+    Boolean isHandWork;
+    List<String> itemsList=new ArrayList<>();
+
+
+    common common=new common();
+    private boolean workComplete=true;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_order_details);
+        orderNoView=findViewById(R.id.orderNo);
+        orderDateView=findViewById(R.id.orderDate);
+        deliveryDateView=findViewById(R.id.deliveryDateView);
+        customerNameView=findViewById(R.id.customerName);
+        itemsCountView=findViewById(R.id.itemsCountView);
+        handWorkOnImageView=findViewById(R.id.handWorkOnImageView);
+        handWorkOffImageView=findViewById(R.id.handWorkOffImageView);
+
+
+        databaseOrders=database.getReference("orders");
+
+
+        getData();
+
+        setDataWithView();
+
+
+
+    }
+
+    public  void getData()
+    {
+        Intent intent=getIntent();
+        orderNo=intent.getStringExtra("orderNo");
+        designerId=intent.getStringExtra("designerId");
+        customerName=intent.getStringExtra("customerName");
+        orderDate=intent.getStringExtra("orderDate");
+        deliveryDate=intent.getStringExtra("deliveryDate");
+        fetchWorkComplete();
+        //if condition runned before this fetchWorkComplete()
+       
+        userId=common.getCurrentUser();
+     
+
+   
+        if (designerId!=null) {
+            if (!userId.equals(designerId)) {
+                showDesignerName();
+               
+                if (workComplete) {
+                    showWorkCompleteTab();
+                  
+                }
+            } else {
+               
+                if (workComplete) {
+                    showWorkCompleteTab();
+                    
+                } else {
+
+                    showWorkCompleteButton();
+                    
+                }
+            }
+        }
+        
+    }
+
+    private void fetchWorkComplete()
+    {
+    
+        databaseOrders.child(orderNo).child("workComplete").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                workComplete= (Boolean) dataSnapshot.getValue();
+                 //Here get actual value
+            
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+   
+
+    }
+
+
+
+
